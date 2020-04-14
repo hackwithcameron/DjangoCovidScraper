@@ -6,35 +6,68 @@
         <div id="background">
         </div>
         <div class="mainContainer">
-            <div class="card">
-                <img src="{% static 'images/VirusPicture.png' %}" id="VirusPic" alt="Virus Picture">
-                <div class="card-header">
-                    <h1>{{headerInfo.0}}</h1>
-                    <h2>{{stateInfo.0}}</h2>
+            <div class="row">
+                <div class="card" id="past">
+                    <div class="card-header">
+                        <h2>{{headerInfo.0}}</h2>
+                        <h3>{{stateInfo.0}}</h3>
+                    </div>
+                    <div class="card-body">
+                        <h4>Yesterday</h4>
+                        <div class="pastInfo">
+                            {{headerInfo.1}}<br>
+                            {{pastInfo.1}}
+                        </div>
+                        <div class="pastInfo">
+                            {{headerInfo.2}}<br>
+                            {{pastInfo.2}}
+                        </div>
+                        <div class="pastInfo">
+                            {{headerInfo.3}}<br>
+                            {{pastInfo.3}}
+                        </div>
+                        <div class="pastInfo">
+                            {{headerInfo.4}}<br>
+                            {{pastInfo.4}}
+                        </div>
+                        <div class="pastInfo">
+                            {{headerInfo.5}}<br>
+                            {{pastInfo.5}}
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <div class="info">
-                        <h3 class="scaryFont">{{headerInfo.1}}</h3>
-                        <h3>{{stateInfo.1}}</h3>
+                <div class="card" id="current">
+                    <img src="{% static 'images/VirusPicture2.png' %}" id="VirusPic" alt="Virus Picture">
+                    <div class="card-header">
+                        <h1>{{headerInfo.0}}</h1>
+                        <h2>{{stateInfo.0}}</h2>
                     </div>
-                    <div class="info">
-                        <h3>{{headerInfo.2}}</h3>
-                        <h3>{{stateInfo.2}}</h3>
-                    </div>
-                    <div class="info">
-                        <h3>{{headerInfo.3}}</h3>
-                        <h3>{{stateInfo.3}}</h3>
-                    </div>
-                    <div class="info">
-                        <h3>{{headerInfo.4}}</h3>
-                        <h3>{{stateInfo.4}}</h3>
-                    </div>
-                    <div class="info">
-                        <h3>{{headerInfo.5}}</h3>
-                        <h3>{{stateInfo.5}}</h3>
+                    <div class="card-body">
+                        <h2>Current</h2>
+                        <div class="info">
+                            <h3>{{headerInfo.1}}</h3>
+                            <h3>{{stateInfo.1}}</h3>
+                        </div>
+                        <div class="info">
+                            <h3>{{headerInfo.2}}</h3>
+                            <h3>{{stateInfo.2}}</h3>
+                        </div>
+                        <div class="info">
+                            <h3>{{headerInfo.3}}</h3>
+                            <h3>{{stateInfo.3}}</h3>
+                        </div>
+                        <div class="info">
+                            <h3>{{headerInfo.4}}</h3>
+                            <h3>{{stateInfo.4}}</h3>
+                        </div>
+                        <div class="info">
+                            <h3>{{headerInfo.5}}</h3>
+                            <h3>{{stateInfo.5}}</h3>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
