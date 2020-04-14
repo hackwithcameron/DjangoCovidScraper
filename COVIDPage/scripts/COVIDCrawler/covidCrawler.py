@@ -38,3 +38,4 @@ def stateScraper(searchedState):
                     stateInfo.append(i.text.strip())        # Appends information from cells following searched name
     return stateInfo
 
+

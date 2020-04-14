@@ -3,3 +3,69 @@
     margin: 0;
     padding: 0;
 }
+
+@font-face {
+    font-family: '28DaysLater';
+    src: local('28DaysLater'),
+         url('../fonts/28\ Days\ Later.ttf');
+  }
+
+.container-fluid{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#background{
+    position: relative;
+    background-color: #292c36;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.mainContainer{
+    width: 80%;
+    position: absolute;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.card{
+    border-radius: 5px;
+    font-family: '28DaysLater';
+    width: 100%;
+}
+
+.card-body{
+    background-color: #e2e2e2;
+}
+
+
+.info{
+    border: 2px solid grey;
+    width: 50%;
+    justify-content: center;
+    margin: 5px auto;
+    border-radius: 8px;
+    z-index: 2;
+    background-color: #fafafa;
+    position: relative;
+}
+
+#VirusPic{
+    position: absolute;
+    top: 100px;
+    right: -50px;
+    z-index: 1;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 50%;
+    filter: drop-shadow(0px 0px 20px rgba(173, 12, 12, 1));
+}
+
+/********** Screen Sizing **********/
+
+/**** 920 ******/

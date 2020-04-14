@@ -2,9 +2,40 @@
 {% load static %}
 {% block content %}
 <section>
-    <div>
-        <h1>{{headerInfo.0}}</h1>
-        <h1>{{stateInfo.0}}</h1>
+    <div class="container-fluid">
+        <div id="background">
+        </div>
+        <div class="mainContainer">
+            <div class="card">
+                <img src="{% static 'images/VirusPicture.png' %}" id="VirusPic" alt="Virus Picture">
+                <div class="card-header">
+                    <h1>{{headerInfo.0}}</h1>
+                    <h2>{{stateInfo.0}}</h2>
+                </div>
+                <div class="card-body">
+                    <div class="info">
+                        <h3 class="scaryFont">{{headerInfo.1}}</h3>
+                        <h3>{{stateInfo.1}}</h3>
+                    </div>
+                    <div class="info">
+                        <h3>{{headerInfo.2}}</h3>
+                        <h3>{{stateInfo.2}}</h3>
+                    </div>
+                    <div class="info">
+                        <h3>{{headerInfo.3}}</h3>
+                        <h3>{{stateInfo.3}}</h3>
+                    </div>
+                    <div class="info">
+                        <h3>{{headerInfo.4}}</h3>
+                        <h3>{{stateInfo.4}}</h3>
+                    </div>
+                    <div class="info">
+                        <h3>{{headerInfo.5}}</h3>
+                        <h3>{{stateInfo.5}}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 {% endblock %}
