@@ -20,19 +20,22 @@
 
 #background{
     position: relative;
-    background-color: #292c36;
     overflow: hidden;
     width: 100%;
     height: 100vh;
+    background-image: linear-gradient(320deg, #292c36 60%, #363947);
 }
 
 .mainContainer{
     width: 80%;
     height: 95%;
+    max-width: 960px;
+    min-height: 685px;
     position: absolute;
     text-align: center;
     border-radius: 8px;
-    background-color: #513c3e;
+    background-image: linear-gradient(135deg, #1e2028 40%, #292c36);
+  filter: drop-shadow(0px 0px 20px #0c0c0d);
     display: grid;
 }
 
@@ -91,8 +94,8 @@
 
 #VirusPic{
     position: absolute;
-    top: 100px;
-    right: -200px;
+    top: 175px;
+    right: -100px;
     z-index: 1;
     width: 350px;
     overflow: hidden;
@@ -100,6 +103,43 @@
     filter: drop-shadow(0px 0px 20px rgba(173, 12, 12, 1));
 }
 
+.sphereBig{
+    height: 350px;
+    width: 350px;
+    top: 175px;
+    right: -100px;
+    z-index: 1;
+    filter: drop-shadow(0 0 50px rgb(173, 12, 12));
+}
+
+.sphereSmall{
+    height: 150px;
+    width: 150px;
+    bottom: -25px;
+    right: 20px;
+    filter: drop-shadow(0 0 20px rgb(173, 12, 12));
+}
+
+.sphere{
+    display: block;
+    position: absolute;
+    background-color: rgba(173, 12, 12, 1);
+    border-radius: 50%;
+    background: radial-gradient(circle at 90px 60px, rgb(255, 126, 126), rgb(255, 0, 0) 10%, rgb(151, 0, 0) 80%, rgb(4, 0, 0) 100%);
+}
+
+.sphere::before{
+    content: "";
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 0px, #f03131, rgba(255, 255, 255, 0) 58%);
+    filter: blur(5px);
+    z-index: 1;
+}
+
 /********** Screen Sizing **********/
 
-/**** 920 ******/
