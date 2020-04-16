@@ -15,6 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 
@@ -26,6 +27,10 @@
     background-image: linear-gradient(320deg, #292c36 60%, #363947);
 }
 
+#backgroundImg{
+    opacity: .25;
+}
+
 .mainContainer{
     width: 80%;
     height: 95%;
@@ -34,9 +39,20 @@
     position: absolute;
     text-align: center;
     border-radius: 8px;
-    background-image: linear-gradient(135deg, #1e2028 40%, #292c36);
-  filter: drop-shadow(0px 0px 20px #0c0c0d);
+    
+    background-color: rgba(42, 43, 51, 0.6);
+    box-shadow: 0 10px 100px 100px rgba(42, 43, 51, 0.6);
     display: grid;
+}
+
+.mainContainer::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
 }
 
 .row{
@@ -70,7 +86,18 @@
 }
 
 .card-body{
-    background-color: #e2e2e2;
+    background-image: linear-gradient(135deg, #e2e2e2, rgba(255, 255, 255, 0));
+}
+
+.card-body::before{
+    background-image: url('../images/background.jpg');
+    opacity: .035;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 
 
