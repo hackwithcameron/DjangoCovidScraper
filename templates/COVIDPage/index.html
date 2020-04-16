@@ -4,11 +4,15 @@
 <section>
     <div class="container-fluid">
         <div id="background">
+            <img src="{% static 'images/VirusPic.png' %}" class="virus" id="backgroundVirus3" alt=" ">
+            <img src="{% static 'images/VirusPic.png' %}" class="virus" id="backgroundVirus4" alt=" ">
         </div>
         <div class="mainContainer">
             <div class="row">
+                <img src="{% static 'images/VirusPic.png' %}" class="virus" id="backgroundVirus2" alt=" ">
+
                 <div class="card" id="past">
-                    <div class="sphere sphereSmall"></div>
+                    <img src="{% static 'images/VirusPic.png' %}" class="virus virusSmall" alt=" ">
                     <div class="card-header">
                         <h2>{{headerInfo.0}}</h2>
                         <h3>{{stateInfo.0}}</h3>
@@ -38,10 +42,7 @@
                     </div>
                 </div>
                 <div class="card" id="current">
-                    <!--
-                    <img src="{% static 'images/VirusPicture2.png' %}" id="VirusPic" alt="Virus Picture">
-                    -->
-                    <div class="sphere sphereBig"></div>
+                    <img src="{% static 'images/VirusPic.png' %}" class="virus virusBig" alt=" ">
                     <div class="card-header">
                         <h1>{{headerInfo.0}}</h1>
                         <h2>{{stateInfo.0}}</h2>

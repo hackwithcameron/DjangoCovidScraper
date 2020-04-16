@@ -45,6 +45,10 @@
     align-items: center;
 }
 
+.card{
+    z-index: 2;
+}
+
 #current{
     border-radius: 5px;
     font-family: '28DaysLater';
@@ -92,54 +96,51 @@
     position: relative;
 }
 
-#VirusPic{
+.virus{
     position: absolute;
-    top: 175px;
-    right: -100px;
-    z-index: 1;
-    width: 350px;
     overflow: hidden;
     border-radius: 50%;
-    filter: drop-shadow(0px 0px 20px rgba(173, 12, 12, 1));
+    filter: drop-shadow(0px 0px 20px rgb(17, 12, 173)) hue-rotate(140deg);
 }
 
-.sphereBig{
-    height: 350px;
-    width: 350px;
+.virusBig{
     top: 175px;
     right: -100px;
     z-index: 1;
-    filter: drop-shadow(0 0 50px rgb(173, 12, 12));
+    width: 350px;
+    filter: drop-shadow(0px 0px 50px rgb(17, 12, 173)) hue-rotate(140deg);
 }
 
-.sphereSmall{
-    height: 150px;
+
+.virusSmall{
     width: 150px;
-    bottom: -25px;
-    right: 20px;
-    filter: drop-shadow(0 0 20px rgb(173, 12, 12));
+    bottom: -35px;
+    left: 10%;
+    filter: drop-shadow(0px 0px 20px rgb(17, 12, 173)) hue-rotate(140deg);
+    transform: rotate(-65deg) perspective(10px);
 }
 
-.sphere{
-    display: block;
-    position: absolute;
-    background-color: rgba(173, 12, 12, 1);
-    border-radius: 50%;
-    background: radial-gradient(circle at 90px 60px, rgb(255, 126, 126), rgb(255, 0, 0) 10%, rgb(151, 0, 0) 80%, rgb(4, 0, 0) 100%);
-}
-
-.sphere::before{
-    content: "";
-    position: absolute;
-    top: 1%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
-    border-radius: 50%;
-    background: radial-gradient(circle at 50% 0px, #f03131, rgba(255, 255, 255, 0) 58%);
-    filter: blur(5px);
+#backgroundVirus2{
+    top: -20px;
+    left: 50px;
     z-index: 1;
+    width: 275px;
+    transform: rotate(165deg);
+ }
+
+#backgroundVirus3{
+  right: -50px;
+  top: 50px;
+  transform: rotate(-90deg);
 }
+
+#backgroundVirus4{
+  right: 85px;
+  bottom: -50px;
+  width: 200px;
+  transform: rotate(-50deg);
+}
+
 
 /********** Screen Sizing **********/
 
