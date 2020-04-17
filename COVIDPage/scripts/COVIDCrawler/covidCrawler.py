@@ -22,7 +22,7 @@ class CovidScraper:
         return headerInfo
 
     # Gets searched states information
-    def stateScraper(self, searchedState):
+    def stateScraper(self, searchedState='USA Total'):
         cells = self.table.find_all('td')
 
         stateInfo = []    # Empty list to hold parsed information

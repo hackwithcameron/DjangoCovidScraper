@@ -8,10 +8,16 @@
             <img src="{% static 'images/VirusPic.png' %}" class="virus" id="backgroundVirus3" alt=" ">
             <img src="{% static 'images/VirusPic.png' %}" class="virus" id="backgroundVirus4" alt=" ">
         </div>
+
         <div class="mainContainer">
             <div class="row">
                 <img src="{% static 'images/VirusPic.png' %}" class="virus" id="backgroundVirus2" alt=" ">
-
+                <form method="POST" class="searchBarContainer">
+                    {% csrf_token %}
+                    <input type="text" class="searchBar" placeholder="Search States" name="searchedState" id="searchBar" list="stateList">
+                    <datalist id="stateList"></datalist>
+                    <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+                </form>
                 <div class="card" id="past">
                     <img src="{% static 'images/VirusPic.png' %}" class="virus virusSmall" alt=" ">
                     <div class="card-header pastHeader">
