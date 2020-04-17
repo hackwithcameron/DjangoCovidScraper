@@ -14,42 +14,42 @@
 
                 <div class="card" id="past">
                     <img src="{% static 'images/VirusPic.png' %}" class="virus virusSmall" alt=" ">
-                    <div class="card-header">
+                    <div class="card-header pastHeader">
                         <h2>{{headerInfo.0}}</h2>
                         <h3>{{stateInfo.0}}</h3>
                     </div>
                     <div class="card-body">
-                        <h4>Yesterday</h4>
+                        <h4 class="pastTag">Yesterday</h4>
                         <div class="pastInfo">
-                            {{headerInfo.1}}<br>
-                            {{pastInfo.1}}
+                            <p>{{headerInfo.1}}</p>
+                            <p>{{pastInfo.1}}</p>
                         </div>
                         <div class="pastInfo">
-                            {{headerInfo.2}}<br>
-                            {{pastInfo.2}}
+                            <p>{{headerInfo.2}}</p>
+                            <p>{{pastInfo.2}}</p>
                         </div>
                         <div class="pastInfo">
-                            {{headerInfo.3}}<br>
-                            {{pastInfo.3}}
+                            <p>{{headerInfo.3}}</p>
+                            <p>{{pastInfo.3}}</p>
                         </div>
                         <div class="pastInfo">
-                            {{headerInfo.4}}<br>
-                            {{pastInfo.4}}
+                            <p>{{headerInfo.4}}</p>
+                            <p>{{pastInfo.4}}</p>
                         </div>
                         <div class="pastInfo">
-                            {{headerInfo.5}}<br>
-                            {{pastInfo.5}}
+                            <p>{{headerInfo.5}}</p>
+                            <p>{{pastInfo.5}}</p>
                         </div>
                     </div>
                 </div>
                 <div class="card" id="current">
                     <img src="{% static 'images/VirusPic.png' %}" class="virus virusBig" alt=" ">
-                    <div class="card-header">
+                    <div class="card-header currentHeader">
                         <h1>{{headerInfo.0}}</h1>
                         <h2>{{stateInfo.0}}</h2>
                     </div>
                     <div class="card-body">
-                        <h2>Current</h2>
+                        <h2 class="currentTag">Current</h2>
                         <div class="info">
                             <h3>{{headerInfo.1}}</h3>
                             <h3>{{stateInfo.1}}</h3>
