@@ -8,7 +8,7 @@ This was created for educational purposes. I created a web scraper using pythons
 <hr>
 
 ### Back-End stories
-[Scraper (base)](#Scraping-with-BeatutifulSoup-(base))\
+[Scraper (base)](#Scraping-with-BeautifulSoup(base))\
 [Scraper (complete)](#Scraping-with-BeatutifulSoup-(complete))
 
 ### Front-End stories
@@ -18,7 +18,7 @@ This was created for educational purposes. I created a web scraper using pythons
 
 ## Back-End
 
-#### Scraping with BeatutifulSoup (base)
+#### Scraping with BeautifulSoup(base)
 To gather Information I chose to use Pythons requests library with BeautifulSoup. The target site [Worldometers US](https://www.worldometers.info/coronavirus/country/us/). This is the base scraper I created to get an idea of how to display the information gathered.
 ```
 import requests
@@ -73,7 +73,7 @@ for display in results:
 ```
 <hr>
 
-#### Scraping with BeatutifulSoup (complete)
+#### Scraping with BeatutifulSoup(complete)
 To get an idea of how to information was arranged and how to work with the data the above solution worked. But I wanted to be able to search the different states along with having a default if nothing was searched. That lead me to modify the exsisting scraped to look more like what is below. It also allowed me to pull from both "yesterdays" and "todays" tables to get both sets of information.
 ```
 class CovidScraper:
