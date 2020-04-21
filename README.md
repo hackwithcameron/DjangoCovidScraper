@@ -8,8 +8,8 @@ This was created for educational purposes. I created a web scraper using pythons
 <hr>
 
 ### Back-End stories
-[Scraper (base)](#Scraping-with-BeautifulSoup(base))\
-[Scraper (complete)](#Scraping-with-BeatutifulSoup-(complete))\
+[Scraper (base)](#Scraping-with-BeautifulSoup(base)\
+[Scraper (complete)](#Scraping-with-BeatutifulSoup-(complete)\
 [Views.py](#View(complete))
 
 ### Front-End stories
