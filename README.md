@@ -219,8 +219,8 @@ To help reduce the risk of misspelled searches I wanted to create an auto fill f
 </form>
 ```
 
-##### JavaScript
-JavaScript to Parse and add information to datalist
+#### JavaScript
+Used JavaScript to Parse and add information to datalist
 ```
 // AutoFill search bar
 var stateList = document.getElementById('stateList');
