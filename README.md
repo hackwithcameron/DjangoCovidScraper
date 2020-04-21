@@ -8,9 +8,9 @@ This was created for educational purposes. I created a web scraper using pythons
 <hr>
 
 ### Back-End stories
-[Scraper (base)](#Scraping-with-BeautifulSoup(base)\
-[Scraper (complete)](#Scraping-with-BeatutifulSoup-(complete)\
-[Views.py](#View(complete))
+[Scraper (base)](#Scraping-with-BeautifulSoup-base)\
+[Scraper (complete)](#Scraping-with-BeatutifulSoup-complete)\
+[Views.py](#View-complete)
 
 ### Front-End stories
 [Search Bar](#Search-Bar)\
@@ -20,7 +20,7 @@ This was created for educational purposes. I created a web scraper using pythons
 
 ## Back-End
 
-#### Scraping with BeautifulSoup(base)
+#### Scraping with BeautifulSoup base
 To gather Information I chose to use Pythons requests library with BeautifulSoup. The target site [Worldometers US](https://www.worldometers.info/coronavirus/country/us/). This is the base scraper I created to get an idea of how to display the information gathered.
 ```
 import requests
@@ -165,7 +165,7 @@ if searchedState.lower() in x.lower():
 ```
 <hr>
 
-#### Views(complete)
+#### Views complete
 ```
 from django.shortcuts import render
 from .scripts.COVIDCrawler.covidCrawler import CovidScraper
