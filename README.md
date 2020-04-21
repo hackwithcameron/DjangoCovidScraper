@@ -202,6 +202,7 @@ def index(request):
         }
         return render(request, 'COVIDPage/index.html', context)
 ```
+<hr>
 
 ## Front-End
 For the Front-End I used Bootstrap 4 for styling along with custom CSS and JavaScript. 
@@ -248,6 +249,7 @@ request.send();
 var dataList = document.getElementById('json-datalist');
 var input = document.getElementById('ajax');
 ```
+<hr>
 
 #### Cards
 Once I had the information passed from my views to my index.html file displaying the information was as straight forward as using the indices for each peace of information.
@@ -313,5 +315,7 @@ Once I had the information passed from my views to my index.html file displaying
     </div>
 </div>
 ```
+<hr>
+
 ### Conclusion/Gained Skills
 I started this project with the idea of just creating a data scraper to learn how the information is gathered and processed. It has since changed into a full web application with the ability to search for specific states COVID-19 information. Learning to work with json files inside of the Django framework, along with implementing a data scraped from another site to be displayed in the users dashboard has really helped reinforce how information is processed and moved.
