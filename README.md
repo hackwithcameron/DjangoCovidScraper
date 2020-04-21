@@ -9,10 +9,12 @@ This was created for educational purposes. I created a web scraper using pythons
 
 ### Back-End stories
 [Scraper (base)](#Scraping-with-BeautifulSoup(base))\
-[Scraper (complete)](#Scraping-with-BeatutifulSoup-(complete))
+[Scraper (complete)](#Scraping-with-BeatutifulSoup-(complete))\
+[Views.py](#View(complete))
 
 ### Front-End stories
-
+[Search Bar](#Search-Bar)\
+[Cards](#Cards)
 
 <hr>
 
@@ -74,7 +76,7 @@ for display in results:
 <hr>
 
 #### Scraping with BeatutifulSoup(complete)
-To get an idea of how to information was arranged and how to work with the data the above solution worked. But I wanted to be able to search the different states along with having a default if nothing was searched. That lead me to modify the exsisting scraped to look more like what is below. It also allowed me to pull from both "yesterdays" and "todays" tables to get both sets of information.
+To get an idea of how to information was arranged and how to work with the data the above solution worked. But I wanted to be able to search the different states along with having a default if nothing was searched. That lead me to modify the existing scraped to look more like what is below. It also allowed me to pull from both "yesterdays" and "todays" tables to get both sets of information.
 ```
 class CovidScraper:
     def __init__(self, tableTag):
@@ -113,7 +115,7 @@ class CovidScraper:
 ```
 <hr>
 
-#### Views
+#### View
 Once I had the scraper built it was just a matter of linking it to my views and using the information it returned. Because I was using Django I added the scraper to a scripts folder in the app that was going to use it, then I just needed to import it into my views.py.
 ```
 from django.shortcuts import render
@@ -149,6 +151,7 @@ def index(request):
         return render(request, 'COVIDPage/index.html', context)
 ```
 <hr>
+
 To make sure what was searched is a US state I added the lines below to check for a match against a list of states as a json file.
 
 ```
@@ -162,7 +165,7 @@ if searchedState.lower() in x.lower():
 ```
 <hr>
 
-#### views.py complete
+#### Views(complete)
 ```
 from django.shortcuts import render
 from .scripts.COVIDCrawler.covidCrawler import CovidScraper
@@ -205,7 +208,7 @@ For the Front-End I used Bootstrap 4 for styling along with custom CSS and JavaS
 
 #### Search Bar
 Being able to search for the desired state information is important to have the web app reach a more broad range of users.
-To help reduce the risk of misspelled searches I wanted to create an autofill feild that included all the US states. This was achieved by including a json file that included a list of all the US states which was parsed then appended the information to options in that datalist html tag.
+To help reduce the risk of misspelled searches I wanted to create an auto fill field that included all the US states. This was achieved by including a json file that included a list of all the US states which was parsed then appended the information to options in that datalist html tag.
 ```
 <form method="POST" class="searchBarContainer">
       {% csrf_token %}
@@ -310,3 +313,5 @@ Once I had the information passed from my views to my index.html file displaying
     </div>
 </div>
 ```
+### Conclusion/Gained Skills
+I started this project with the idea of just creating a data scraper to learn how the information is gathered and processed. It has since changed into a full web application with the ability to search for specific states COVID-19 information. Learning to work with json files inside of the Django framework, along with implementing a data scraped from another site to be displayed in the users dashboard has really helped reinforce how information is processed and moved.
