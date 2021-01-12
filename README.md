@@ -76,7 +76,7 @@ for display in results:
 <hr>
 
 #### Scraping with BeatutifulSoup complete
-To get an idea of how the information was arranged and how to work with the data the above solution worked, but I wanted to be able to search the different states along with having a default if nothing was searched. That lead me to modify the existing scraped to look more like what is below. It also allowed me to pull from both "yesterdays" and "todays" tables to get both sets of information.
+To get an idea of how the information was arranged and how to work with the data, the above solution worked, but I wanted to be able to search the different states along with having a default if nothing was searched. That lead me to modify the existing scraper to look more like what is below. It also allowed me to pull from both "yesterdays" and "todays" tables to get both sets of information.
 ```
 class CovidScraper:
     def __init__(self, tableTag):
